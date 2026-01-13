@@ -1,6 +1,6 @@
 ---
 name: interview-planner
-description: 在一次访谈开始或当前话题结束时，选择一个合适的访谈方向（时间段或人生阶段），用于后续访谈提问
+description: "📋 PLANNING TOOL: Use before starting a new interview session OR when the current topic is exhausted and you need to decide what life stage/period to explore next. Reviews previous records to avoid repetition and selects one focused direction."
 ---
 
 ## introduction

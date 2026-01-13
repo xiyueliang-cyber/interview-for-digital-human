@@ -23,7 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - **interview-log-writer skill**: Timeline recording system
   - Extracts 1-3 key memories per session
-  - Saves to CSV format (`interview_records.csv`)
+  - Saves to configured storage (Workspace or Google Sheets)
   - Captures: time period, people, events, emotions, and notes
 
 - **persona-insights-writer skill**: Personality and expression preservation
@@ -39,8 +39,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Sample data structures
 
 - **Data Storage**:
-  - `interview_records.csv`: Chronological timeline of life events
-  - `persona_insights.md`: Original expressions and personality insights
+  - Multiple storage backends: Workspace (XYZ platform) and Google Sheets
+  - `interview_records`: Chronological timeline of life events
+  - `persona_insights`: Original expressions and personality insights
 
 ### Features
 - Long-term, low-pressure conversation approach
@@ -54,12 +55,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Future Roadmap
 
 ### Planned Features
-- Google Sheets MCP integration for cloud backup
-- Multi-language support
+- Enhanced multi-language support
 - Voice tone and emotion analysis integration
 - Timeline visualization
 - Advanced search and filtering of memories
 - Export to various formats (JSON, PDF)
+- Additional storage backends
 
 ### Under Consideration
 - Integration with digital human rendering systems

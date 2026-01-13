@@ -1,6 +1,6 @@
 ---
 name: interview-conversation
-description: 根据当前访谈方向与用户进行自然、非考试式的访谈聊天；以"微会话"形式推进，用户有兴致时不主动结束
+description: "🎯 PRIMARY CONVERSATION TOOL: Use this when conducting the interview dialogue with the user (asking questions, listening to their stories, following up on details). Conducts natural, empathetic conversations using micro-session approach to collect life memories without interrogation."
 ---
 
 ## introduction

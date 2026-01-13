@@ -37,8 +37,9 @@ This is a long-term, low-pressure approach. The agent never rushes to "complete"
    - Preserves the exact wording for digital cloning purposes
 
 4. **Dual-Track Recording System**
-   - **Timeline Records** (`interview_records.csv`): Chronological life events with context
-   - **Persona Insights** (`persona_insights.md`): Original expressions, personality clues, relationship attitudes, emotional patterns
+   - **Timeline Records**: Chronological life events with context
+   - **Persona Insights**: Original expressions, personality clues, relationship attitudes, emotional patterns
+   - Supports multiple storage backends: Workspace (XYZ platform) or Google Sheets
 
 5. **Intelligent Topic Planning**
    - Suggests conversation directions based on previous discussions
@@ -68,7 +69,7 @@ This is a long-term, low-pressure approach. The agent never rushes to "complete"
 **Purpose**: Records key information after sessions
 
 - Extracts 1-3 key memories per session
-- Saves timeline records to CSV
+- Saves timeline records to configured storage (Workspace or Google Sheets)
 - Triggers persona insights collection for character-revealing moments
 - Never interrupts active conversations
 
@@ -82,15 +83,23 @@ This is a long-term, low-pressure approach. The agent never rushes to "complete"
 
 ---
 
-## MCP Tools Required
+## Storage Options
 
-**None**
+This plugin supports multiple storage backends:
 
-This plugin currently saves all data to local files:
-- `interview_records.csv` - Timeline of life events
-- `persona_insights.md` - Personality insights and original expressions
+### 1. **Workspace Storage (XYZ Platform)**
+- Saves to your workspace directory on the XYZ platform
+- No additional setup required
+- Access and download files through platform file manager
 
-*(Future versions may integrate with Google Sheets MCP for cloud storage)*
+### 2. **Google Sheets (Optional)**
+- Requires Google Sheets MCP authorization
+- Enables cloud access and real-time collaboration
+- Data organized in structured sheets
+
+**Data Collections:**
+- `interview_records` - Timeline of life events
+- `persona_insights` - Personality insights and original expressions
 
 ---
 
@@ -158,10 +167,10 @@ Agent: "阳光透过叶子缝隙...那画面一定很美。你经常去那里吗
 ```
 
 **What's captured:**
-- Timeline: "Childhood memory of front yard garden with loquat and crabapple trees"
-- Original expression: "阳光会透过叶子缝隙掉下来"
-- Emotional tone: Warm nostalgia for childhood place
-- Sensory details: Visual (white flowers, climbing ivy, dappled sunlight)
+- **Timeline record**: "Childhood memory of front yard garden with loquat and crabapple trees"
+- **Original expression**: "阳光会透过叶子缝隙掉下来"
+- **Emotional tone**: Warm nostalgia for childhood place
+- **Sensory details**: Visual (white flowers, climbing ivy, dappled sunlight)
 
 ---
 
@@ -186,22 +195,23 @@ The agent never manipulates, never pushes sensitive topics, and always allows th
 
 ## Future Development
 
-- Google Sheets MCP integration for cloud backup
-- Multi-language support
+- Enhanced multi-language support
 - Voice tone and emotion analysis
 - Integration with digital human rendering systems
 - Advanced timeline visualization
+- Additional storage backends
 
 ---
 
 ## Getting Started
 
-1. Place this plugin in your Claude Code plugins directory
-2. Start a conversation: Just say "hi" or "我们聊聊"
-3. The agent will naturally guide you into sharing stories
-4. Find your records in:
-   - `interview_records.csv` (timeline)
-   - `persona_insights.md` (personality insights)
+1. Install this plugin in your Claude Code environment or XYZ platform
+2. Configure storage preference (Workspace or Google Sheets)
+3. Start a conversation: Just say "hi" or "我们聊聊"
+4. The agent will naturally guide you into sharing stories
+5. Access your records:
+   - **Workspace**: Through platform file manager
+   - **Google Sheets**: In your Google Drive
 
 ---
 
