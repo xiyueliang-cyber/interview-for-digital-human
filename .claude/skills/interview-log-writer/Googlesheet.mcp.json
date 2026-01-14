@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "googlesheets": {
+      "url": "https://mcp.netmind.ai/v2/XdV3FC8s/sse",
+      "transport": "sse"
+    }
+  }
+}

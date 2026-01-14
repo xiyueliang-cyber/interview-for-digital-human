@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Local settings
+.claude/settings.local.json
+
+# Temporary files
+*.tmp
+*.log
+
+# Personal data files (optional - uncomment if you don't want to share interview data)
+# interview_records.csv
+# persona_insights.md
