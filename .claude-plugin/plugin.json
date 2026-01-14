@@ -1,0 +1,19 @@
+{
+  "name": "interview-for-digital-human",
+  "version": "1.0.0",
+  "description": "A gentle interview agent that collects life memories and authentic expressions for digital human simulation through natural conversation",
+  "author": {
+    "name": "xiyue"
+  },
+  "license": "MIT",
+  "keywords": [
+    "interview",
+    "digital-human",
+    "biography",
+    "life-story",
+    "oral-history",
+    "memory-preservation",
+    "conversation"
+  ],
+  "skills": "./skills"
+}

@@ -3,12 +3,40 @@
 .AppleDouble
 .LSOverride
 
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# IDE
+.vscode/
+.idea/
+
+# Node modules (if any)
+node_modules/
+
 # Local settings
 .claude/settings.local.json
 
+# Logs
+*.log
+
 # Temporary files
 *.tmp
-*.log
+*.temp
 
 # Personal data files (optional - uncomment if you don't want to share interview data)
 # interview_records.csv
