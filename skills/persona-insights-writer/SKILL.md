@@ -1,6 +1,6 @@
 ---
 name: persona-insights-writer
-description: "✨ INSIGHTS EXTRACTOR: Typically called by interview-log-writer after recording conversations. Use when the dialogue revealed distinctive phrasings, personality traits, preferences, or attitudes toward important people. Extracts and accumulates these observations for future digital-human simulation."
+description: 从访谈对话中提取性格线索和原始表达，保存为数字人模拟的真实材料
 ---
 
 ## introduction
@@ -19,22 +19,6 @@ description: "✨ INSIGHTS EXTRACTOR: Typically called by interview-log-writer a
 - 保留用户真实的表达方式
 - 记录观察到的行为模式
 - 不做心理诊断或标签化
-
-### 存储配置
-
-本 skill 支持两种存储方式，根据环境配置自动选择：
-
-1. **Workspace 存储（XYZ 平台）**
-   - 逻辑名称：`persona_insights`
-   - 格式：Markdown 或结构化文档
-   - 位置：用户的 workspace 目录
-   - 用户可通过平台文件管理器查看和下载
-
-2. **Google Sheet 存储**
-   - 逻辑名称：`persona_insights`（Sheet 名称）
-   - 格式：Google Sheets（分类分列存储）
-   - 需要 Google Sheets MCP 授权
-   - 用户可在 Google Drive 中访问和编辑
 
 ## instruction
 
@@ -104,9 +88,9 @@ description: "✨ INSIGHTS EXTRACTOR: Typically called by interview-log-writer a
        - Date: 2026-01-09
      ```
 
-4. **数据格式与结构**
-   - 保存到配置的存储系统（逻辑名称：`persona_insights`）
-   - 使用 Markdown 格式（Workspace）或结构化表格（Google Sheet）
+4. **文件格式与结构**
+   - 保存到项目根目录的 `persona_insights.md`
+   - 使用 Markdown 格式
    - 分为四大类：
      1. 🗣️ Original Expressions & Phrasings
      2. 💭 Personality Clues（含：习惯与倾向 / 偏好）
@@ -115,13 +99,12 @@ description: "✨ INSIGHTS EXTRACTOR: Typically called by interview-log-writer a
    - 每个类别的末尾有一个 📝 Collection Notes 区域
 
 5. **更新规则**
-   - 首次运行时创建完整的数据结构
+   - 首次运行时创建完整的文件结构
    - 后续运行时追加新内容到对应分类下
    - **保持时间顺序**：新记录添加到每个分类的末尾
    - 如果发现相似的表达或线索，可以：
      - 补充到已有记录中（在同一条目下添加新的 Original 引用）
      - 或创建新条目（如果表达方式不同或上下文不同）
-   - 不同存储后端会自动适配格式（Markdown 文档或 Google Sheet）
 
 6. **内容约束**
    - ✅ 保留口语化表达（"哈哈哈哈"、"挺"、"也"等）
@@ -147,10 +130,7 @@ description: "✨ INSIGHTS EXTRACTOR: Typically called by interview-log-writer a
 
 ---
 
-## 数据结构模板
-
-以下是 Markdown 格式（Workspace 存储）的数据结构示例。
-如使用 Google Sheet 存储，将按类似的分类结构组织为多列。
+## 文件结构模板
 
 ```markdown
 # Persona Insights Collection
